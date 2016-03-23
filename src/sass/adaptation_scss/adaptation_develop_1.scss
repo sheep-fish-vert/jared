@@ -93,6 +93,16 @@
 
     /* /top-block */
 
+    /* comment-slider */
+
+        .comment-slider{padding: 40px 0 70px 0;
+            .slick-prev, .slick-next{top:auto;bottom:-80px;right:auto;}
+            .slick-prev{left:calc(50% - 102px);}
+            .slick-next{left:calc(50% + 0px);}
+        }
+
+    /* /comment-slider */
+
 }
 @media screen and (max-width: 320px){
 
