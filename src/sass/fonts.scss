@@ -17,7 +17,13 @@
 /* fonts */
 //  example -> @include font-face('PFDinTextPro', 'PFDinTextPro-Bold', 700, italic);
 
-@include font-face('slick');
+//@include font-face('slick');
 
+@include font-face('Raleway', 'Raleway-Black', 900);
+@include font-face('Raleway', 'Raleway-Bold', 700);
+@include font-face('Raleway', 'Raleway-Medium', 500);
+@include font-face('Raleway', 'Raleway-Regular', 400);
+@include font-face('Raleway', 'Raleway-SemiBold', 600);
+@include font-face('Raleway', 'Raleway-SemiBoldItalic', 600, italic);
 
 /* /fonts*/
