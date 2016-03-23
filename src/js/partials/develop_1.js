@@ -15,10 +15,31 @@ try{
 
     }
 
+    //comment slider init
+    function commentSlider(){
+
+        $('.comment-slider-main').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            draggable:false,
+            swipe:false,
+            responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+
+    };
+
 
     $(document).ready(function(){
 
         sliderMainInit();
+        commentSlider();
 
     });
 
