@@ -69,6 +69,19 @@
     /* /top-block */
 
 }
+@media screen and (max-width:640px){
+
+    /* twiter-block */
+
+        .twiter-block{
+            .twiter-wrap{padding-left: 0;
+                &:before{top:-110px;left:-85px;}
+            }
+        }
+
+    /* /twiter-block */
+
+}
 @media screen and (max-width: 600px){
 
     /* top-block */
@@ -95,7 +108,7 @@
 
     /* comment-slider */
 
-        .comment-slider{padding: 40px 0 70px 0;
+        .comment-slider{padding: 40px 0 100px 0;
             .slick-prev, .slick-next{top:auto;bottom:-80px;right:auto;}
             .slick-prev{left:calc(50% - 102px);}
             .slick-next{left:calc(50% + 0px);}
