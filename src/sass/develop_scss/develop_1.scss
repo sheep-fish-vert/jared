@@ -1,0 +1,13 @@
+/* prety-icons */
+
+    .prety-icons{border-bottom: 1px solid #1f2b62;padding: 50px 0 50px 0;
+        .prety-icons-wrap{display: flex;justify-content:space-around;align-items:center;
+            .prety-icon-item{display: flex;align-items:center;text-transform: uppercase;
+                .img{margin-right: 30px;margin-top: -20px;}
+                .text-top{font-weight: 600;font-size: 24px;line-height:28px;color:#1f2b62;margin-bottom: 15px;}
+                .text-bottom{font-weight: 500;font-size: 14px;color:#bd1f12;}
+            }
+        }
+    }
+
+/* /prety-icons */

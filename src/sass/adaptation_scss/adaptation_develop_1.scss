@@ -15,11 +15,37 @@
 }
 @media screen and (max-width: 992px){
 
+    /* prety-icons */
+
+        .prety-icons{
+            .prety-icons-wrap{align-items:flex-end;
+                .prety-icon-item{display: block;
+                    .img{margin:0 0 20px 0;text-align: center;}
+                    .text-top, .text-bottom{text-align: center;}
+                }
+            }
+        }
+
+    /* /prety-icons */
+
 }
 @media screen and (max-width: 767px){
 
 }
 @media screen and (max-width: 666px){
+
+    /* prety-icons */
+
+        .prety-icons{padding: 40px 0 25px 0;
+            .prety-icons-wrap{flex-wrap:wrap;
+                .prety-icon-item{padding: 0 5px 15px 5px;
+                    .text-top{font-size: 20px;}
+                    .text-bottom{display: none;}
+                }
+            }
+        }
+
+    /* /prety-icons */
 
 }
 @media screen and (max-width: 479px){
