@@ -17,7 +17,7 @@
 
 }
 @media screen and (max-width: 768px){
-    header{display: flex;align-items:stretch;justify-content:flex-start;
+    header{display: flex;align-items:stretch;justify-content:flex-start;z-index: 150;
         .top-header{width: 64%;
             .mbox{height: 115px;}
             .logo{
@@ -26,7 +26,7 @@
             .top-other{display: none;}
         }
         .bottom-header-wrap{width: 36%;height: auto;display: flex;align-items:stretch;justify-content:flex-start;}
-        .bottom-header{display: flex;align-items:stretch;justify-content:flex-start;overflow: auto;
+        .bottom-header{display: flex;align-items:stretch;justify-content:flex-start;overflow: visible;
             &.active{}
             .mbox{flex-direction:row-reverse;padding: 0;position: static;align-items:stretch;}
             .navigation{width: 50%;
@@ -36,29 +36,65 @@
                         &:hover{background-color: inherit;opacity: .9;}
                     }
                 }
-                nav{position: absolute;width: 100%;left: 0;top: 0px;z-index: 15;min-height: 1140px;background-color: rgba(189,31,18, .95);display: flex;align-items:center;justify-content:center;display: none;}
-                button{display: block;}
+                nav{position: absolute;width: 100%;left: 0;top: 0px;z-index: 15;min-height: 1140px;background-color: rgba(189,31,18, .95);display: flex;align-items:center;justify-content:center;bottom: 100%;left: 100%;transition:top ease-out .5s,left ease-out .2s;
+                    &.active{bottom: 0;left: 0;}
+                }
+                button{display: block;position: absolute;top: 50%;right: 4.6%;transform: translateY(-50%);width: 100%;height: 32%;border:none;outline: none;background:transparent;max-width: 60px;z-index: 150;
+                    &:after,&:before,span{height: 2px;width: 100%;background-color: #fff;position: absolute;top: 0;content: '';left: 0;transition:all ease-out .2s;}
+                    span{top: calc(50% - 1px);left: 50%;transform: translateX(-50%);}
+                    &:before{top:auto;bottom: 0;}
+
+                    &.active{
+                        &:after,&:before{transform: rotate(45deg);top: 13px;}
+                        &:before{transform: rotate(-45deg)}
+                        span{width: 0%;}
+                    }
+                }
             }
             .language{width: 50%;display: flex;align-items:stretch;justify-content:flex-start;
                 &:after{display: none;}
-                ul{flex-direction: column;align-items:stretch;width: 100%;position: relative;/*position: absolute;top: 0;height: 100%;width: 100%;*/}
-                li{position: absolute;top: 0;left: 0;height: 100%;width: 100%;z-index: 150;
-                    &:last-child{top: 100%;}
+                ul{flex-direction: column;align-items:stretch;width: 100%;position: relative;}
+                li{position: absolute;top: 0;left: 0;height: 100%;width: 100%;z-index: 150;display: flex;align-items:stretch;justify-content:center;z-index: 14;
+                    &:last-child{top: 100%;background-color: #1f2b62;border-top: 1px solid #000;z-index: 14;}
                     &.active{
-                        &:after{}
+                        &:after{display: none;}
                     }
                 }
-                a{}
+                a{font-size: 21px;padding: 43px 0px;}
             }
         }
     }
 }
-@media screen and (max-width: 666px){
-
+@media screen and (max-width: 600px){
+    header{
+        .top-header{width: 60%;}
+        .bottom-header-wrap{width: 40%;}
+    }
 }
 @media screen and (max-width: 479px){
-
+    header{
+        .top-header{width: 55%;}
+        .bottom-header-wrap{width: 45%;}
+    }
+}
+@media screen and (max-width: 410px){
+    header{
+        .top-header .mbox{height: 96px;padding: 0 0px 0 22px;}
+        .bottom-header .language a{padding: 35px 0px;}
+        .bottom-header .navigation button{max-width: 55px;}
+        .bottom-header .navigation nav{min-height: 800px;}
+        .bottom-header .navigation li{padding: 25px 0px;}
+        .bottom-header .navigation li a{padding: 13px;font-size: 45px;}
+    }
 }
 @media screen and (max-width: 320px){
-
+    header{
+        .top-header .mbox{height: 81px;padding: 0 0px 0 8px;}
+        .top-header .logo svg{width: 154px;height: 61px;}
+        .bottom-header .language a{padding: 32px 0px;}
+        .bottom-header .navigation button{max-width: 43px;}
+        .bottom-header .navigation nav{min-height: 620px;}
+        .bottom-header .navigation li{padding: 13px 0px;}
+        .bottom-header .navigation li a{padding: 11px;font-size: 40px;}
+    }
 }

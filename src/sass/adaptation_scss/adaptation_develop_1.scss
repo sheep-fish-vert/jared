@@ -50,7 +50,7 @@
     /* top-block */
 
         .slider-wrap{
-            .slider-item{padding: 40px 0 90px 0;
+            .slider-item{padding: 124px 0 90px 0;
                 .background{
                     img{margin-left: -150px;}
                 }
@@ -118,5 +118,9 @@
 
 }
 @media screen and (max-width: 320px){
+
+    .slider-wrap .slider-item {
+        padding: 93px 0 90px 0;
+    }
 
 }
