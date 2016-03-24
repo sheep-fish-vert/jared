@@ -1,6 +1,61 @@
 <!-- HEADER -->
 <header>
+    <div class="top-header">
+        <div class="mbox">
+            <div class="logo">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="130" height="56" viewBox="0 0 130 56">
+                      <image xlink:href="data:img/png;base64,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" width="130" height="56"/>
+                    </svg>
 
+                </a>
+            </div>
+            <div class="top-other">
+                <a href="mailto:mail@jaredfirth.com" class="mailto">mail@jaredfirth.com</a>
+                <div class="social">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-skype"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-header-wrap">
+        <div class="bottom-header">
+            <div class="mbox">
+                <div class="navigation">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Specialties</a></li>
+                            <li><a href="#">About </a></li>
+                            <li><a href="#">reviews</a></li>
+                            <li><a href="#">Clients</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button><span></span></button>
+                </div>
+                <div class="language">
+                    <ul>
+                        <li class="active"><a href="#">ENg</a></li>
+                        <li><a href="#">RUS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 <!-- /HEADER -->
 

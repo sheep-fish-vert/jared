@@ -1,0 +1,57 @@
+/*about*/
+    @media screen and (max-width: 666px){
+        .about{
+            .about-wrap{padding: 52px 0 61px;
+                .img{padding-left: 3px; max-width: 191px;
+                    img{width: 142px;}
+                }
+                .txt{font:400 18px/24px 'Raleway'; padding: 3px 0 0 15px; width: calc(100% - 191px);
+                    .txt-wrap{height: 400px; overflow: hidden; padding-left: 3px;}
+                    h2{ font:900 48px/48px 'Raleway';  text-align: center;   padding-bottom: 36px; }
+                    .button{display: block; padding-top: 46px;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 480px){
+        .about{
+            .mbox{padding: 0 15px;}
+            .about-wrap{
+                .img{display: none;}
+                .txt{width: 100%; padding: 0;
+                    h2{ font:900 40px/40px 'Raleway'; padding-bottom: 23px;}
+                    .button{width: 100%; text-align: center;
+                        a{display: inline-block;}
+                    }
+                }
+            }
+        }
+    }
+/*END about*/
+/*some*/
+    @media screen and (max-width: 666px){
+        .some{
+            .some-wrap{padding: 51px 0 44px;
+                .item{ width: 100%; }
+                .img{    padding-bottom: 29px;
+                    img{width: 49%;}
+                }
+                .txt{font:400 18px/24px 'Raleway';      max-width: 100%; padding: 6px 0 37px 16px;
+                    b{ font:700 18px/24px 'Raleway';    padding-bottom: 23px;}
+                }
+                .slick-dots{        bottom: -61px;
+                    li{
+                        button{ width: 12px; height: 12px;}
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 480px){
+        .some{
+            .mbox{padding: 0 15px;}
+        }
+    }
+
+/*END some*/
