@@ -1,0 +1,92 @@
+.top-foot-wrap{width: 100%;  background-color: rgb(31, 43, 98);color: white;
+    .conteiner-foot{display: flex;position: relative; padding-top: 80px; justify-content: space-around;height: 340px;
+        .box-to-box{width: 470px; 
+            .head-text{font-family: "Raleway", sans-serif;font-size: 27px;font-weight: 700;  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.14); line-height: 60px;text-transform: uppercase;  }
+            .description{
+                p{font-family: "Raleway", sans-serif; font-weight: 400; font-size: 14px; line-height: 18px; padding-bottom: 25px;}
+                b{ font-family: "Raleway", sans-serif; text-transform: uppercase; font-weight: 600; font-size: 14px; line-height: 18px; display: block; padding: 9px 0;
+                    span, a{text-transform: none; padding-left: 10px; font-weight: 400; color: white; text-decoration: none; transition: all 0.3s; }
+                    a:hover{text-decoration: underline; }
+                }
+                strong{font-family: "Raleway", sans-serif; font-weight: 400; font-size: 14px; line-height: 18px; max-width: 380px; display: block;}
+            }
+            .buton{text-decoration: none; color: white; display: block; width: 153px; line-height: 30px; border-radius: 15px; background-color: #bd1f12; text-align: center; font-size: 12px; font-family: "Raleway", sans-serif;  transition: all 0.3s; position: relative; z-index: 5;
+                &:before{content: ''; position: absolute; top: 5px; right: 2px; width: 0px; height: 0px; border-radius: 50%; background-color: white; transition: all 0.5s; z-index: 1;}
+                 
+                &:hover{background-color: #E72212;}
+            }
+            .loading{
+                &:before{content: ''; position: absolute; top: -20px; right: -20px; width: 20px; height: 20px; border-radius: 50%; background-color: white;}
+            }
+        }
+    }  
+}
+
+.superform{position: absolute; left: 10%; bottom: 100px;  background-color: white; border-radius: 30px; box-shadow: 0px 1px 20px 0px rgba(189, 31, 18, 0.14), 0px 3px 38px 0px rgba(31, 43, 98, 0.14); border-radius: 30px 30px 170px 30px; transform: scale(0); transition: all 0.5s;
+    
+    .convert{ position: relative; padding:40px 30px 30px;
+           
+          
+        .contact-form-title{font-size: 30px;  font-family: "Raleway", sans-serif; color: rgb(31, 43, 98); font-weight: 700; padding-bottom: 29px; line-height: 2; text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.14);} 
+        .contact-form-item{ padding: 6px 3px;
+            .form_input{ width: 100%; 
+                input[type=text], input[type=email], textarea{ width: 100%; height: 34px; border: 1px solid rgb(233, 233, 233); border-radius: 17px; padding-left: 20px; font-size: 12px;font-family: "Raleway", sans-serif; color: black;  transition: all 0.3s;
+                    &:focus{border-color: #C7B9B9; }
+                }
+                textarea{height: 87px; resize: none; padding: 10px 20px; }
+                input[type=file]{width: 0; height: 0; overflow: hidden; opacity: 0;}
+                label.krasotka{height: 34px; background-color: #bebebe; width: 133px; text-align: center; border-radius: 17px; display: block; line-height: 34px; color: white; cursor: pointer; transition: all 0.3s;font-size: 12px;font-family: "Raleway", sans-serif; position: relative; 
+                    &:hover{background-color: #909090; }
+                }
+                ::-webkit-input-placeholder {color: rgb(190, 190, 190);}
+                ::-moz-placeholder          {color: rgb(190, 190, 190);}/* Firefox 19+ */
+                :-moz-placeholder           {color: rgb(190, 190, 190);}/* Firefox 18- */
+                :-ms-input-placeholder      {color: rgb(190, 190, 190);}
+                label.errorText{display: none !important;}
+            }
+            .contact-submit{font-size: 12px;font-family: "Raleway", sans-serif; width: 107px; line-height: 34px; text-align: center; background-color: #bd1f12; outline: none; border: none; border-radius: 17px; cursor: pointer; color: white; transition: all 0.3s;
+                &:hover{background-color: #E72212;}
+            }
+        } 
+        .error{
+             .form_input{
+                 input[type=text], input[type=email], textarea{border: 1px solid #FF0000; box-shadow: inset 0px 0px 4px 1px #FF0000;}
+                label.krasotka{
+                    &:after{content: ''; position: absolute; right: -16px; top: 16px; width: 8px; height: 2px; background-color:#E72212; animation: arrowMove1 1s ease-out infinite; }
+                    &:before{content: ''; position: absolute; right: -14px; top: 13px; width: 8px; height: 8px; border-top: 2px solid #E72212; border-left: 2px solid #E72212; transform: rotate(-45deg); animation: arrowMove2 1s ease-out infinite;}
+                }
+            }
+        }        
+    }
+ }
+ .slowshow{transform: scale(1); left: 20%; bottom: 140px;}
+ 
+ @keyframes arrowMove2 {
+    0%  {right: -14px;}
+    50% {right: -22px;}
+    100%   {right: -14px;}
+}
+.suck-massege{ position: absolute; left: 0%;bottom: 43px;  background-color: white; border-radius: 30px; box-shadow: 0px 1px 20px 0px rgba(189, 31, 18, 0.14), 0px 3px 38px 0px rgba(31, 43, 98, 0.14); transform: scale(0); transition: all 0.5s; padding: 30px; 
+    p{font-size: 42px; font-family: "Raleway", sans-serif; color: rgb(31, 43, 98); font-weight: 700;
+    line-height: 1;text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.14); text-transform: uppercase;}
+}
+
+.show-suck-massege{ left: 19%; bottom: 147px; transform: scale(1); }
+
+@keyframes arrowMove1 {
+    0%  {right: -16px;}
+    50% {right: -24px;}
+    100%   {right: -16px;}
+}
+
+.bot-foot-wrap{ background-color: #bd1f12; color: white;
+    .convert{display: flex; align-items: center; justify-content: space-between; height: 62px; 
+        .copyr{ display: block; width: 50%; font-size: 12px; font-family: "Raleway", sans-serif;}
+        .socials{text-align: right; display: block; width: 50%;
+            a{color: white; text-decoration: none;  border-radius: 50%; transition: all 0.5s; display: inline-block;
+                &:hover{background-color: #1f2b62;}
+            }
+            i{font-size: 22px;padding: 10px;}
+        }
+    }
+}

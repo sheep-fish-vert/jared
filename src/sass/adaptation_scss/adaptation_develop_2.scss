@@ -17,14 +17,46 @@
 
 }
 @media screen and (max-width: 767px){
+    .top-foot-wrap {
+        .mbox{padding: 0;}
+        .conteiner-foot {display: block; height: auto; padding-top: 0;
+            .box-to-box{padding: 0 45px; width: 100%; padding-top: 50px; padding-bottom: 45px;
+                .description{
+                    p{ font-size: 18px; line-height: 22px;}
+                    b{ font-size: 18px; line-height: 22px;
+                        span, a{text-transform: none; padding-left: 10px; font-weight: 400; color: white; text-decoration: none; }
+                    }
+                    strong{ text-align: center; font-size: 18px; max-width: 100%; display: block; padding-top: 50px;}
+                }
+                &:nth-child(2){background-color: white; color: rgb(31, 43, 98);
+                    .description b span, .description b a {color: rgb(31, 43, 98)}
+                }
+                .buton{font-size: 18px; height: 38px; line-height: 38px; border-radius: 19px; width: 195px;}
+            }
+        }
+    }
+    
+    .superform{top: -150px; left: 145px; bottom: auto;}
+    .slowshow { top: -300px; left: 145px; bottom: auto;}
+    .top-foot-wrap .conteiner-foot .box-to-box .buton:before {top: 0px; left: 70px; right: auto;}
+    .top-foot-wrap .conteiner-foot .box-to-box .loading:before {top: -32px; left: 70px; right: auto;}
+    .show-suck-massege {left: 10%; right: 10%; bottom: auto; top: 70px; text-align: center;}
 
 }
+
 @media screen and (max-width: 666px){
 
 }
 @media screen and (max-width: 479px){
-
+    .superform{ top: -20%; left: 0; bottom: auto;}
+    .slowshow { top: -35%;left: 50%;transform: translateX(-50%); bottom: auto;}
 }
+
+@media screen and (max-width: 400px){
+    .superform{ top: -10%; left: 0; bottom: auto;}
+    .slowshow { top: -21%;left: 50%;transform: translateX(-50%); bottom: auto;}
+}
+
 @media screen and (max-width: 320px){
 
 }

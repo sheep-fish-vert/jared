@@ -118,11 +118,11 @@ function validationCall(form){
 }
 
 /* Отправка формы с файлом */
-function validationCallDocument(form){
-
+function validationCallDocument(form) {
+    
+    $('.box-to-box').find('.superform').removeClass('slowshow');   
     var thisForm = $(form);
     var formData = new FormData($(form)[0]);
-
     formData.append('file', thisForm.find('input[type=file]')[0].files[0]);
 
     $.ajax({
@@ -134,10 +134,13 @@ function validationCallDocument(form){
         cache:false,
         success: function(response) {
             thisForm.trigger("reset");
-            popNext("#call_success", "call-popup");
+            $('.box-to-box').find('.suck-massege').addClass('show-suck-massege');
+             setTimeout(function() {
+                $('.buton').removeClass('loading'); 
+                $('.box-to-box').find('.suck-massege').removeClass('show-suck-massege');
+            }, 2000);
         }
     });
-
 }
 
 /* Отправка формы с файлaми */
@@ -211,7 +214,9 @@ function fancyboxForm(){
 }
 
 $(document).ready(function(){
-   validate('#call-popup .contact-form', {submitFunction:validationCall});
+    //validate('#call-popup .contact-form', { submitFunction: validationCall });
+    validate('.contact-form-popup', { submitFunction: validationCallDocument});
+    
    Maskedinput();
    fancyboxForm();
 });
