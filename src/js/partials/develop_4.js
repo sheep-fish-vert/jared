@@ -1,15 +1,16 @@
 try{
     function headerFixed(){
+    var stickyOffset = $('.bottom-header').offset().top;
+    $(window).scroll(function(){
         if($(window).width()>992){
-            var stickyOffset = $('.bottom-header').offset().top;
-            $(window).scroll(function(){
-              var sticky = $('.bottom-header'),
-                  scroll = $(window).scrollTop();
-              if (scroll >= stickyOffset){
-                sticky.addClass('active');}
-                else {sticky.removeClass('active');}
-            });
+            var sticky = $('.bottom-header'),
+              scroll = $(window).scrollTop();
+            if (scroll >= stickyOffset){
+            sticky.addClass('active');}
+            else {sticky.removeClass('active');}
         }
+    });
+
     }
     $(document).ready(function(){
         headerFixed();
@@ -20,7 +21,7 @@ try{
     });
 
     $(window).resize(function(){
-
+        headerFixed();
     });
 
 }

@@ -17,6 +17,8 @@
 
 }
 @media screen and (max-width: 768px){
+    .global-wrapper{overflow: hidden;}
+
     header{display: flex;align-items:stretch;justify-content:flex-start;z-index: 150;
         .top-header{width: 64%;
             .mbox{height: 115px;}
@@ -85,6 +87,13 @@
         .bottom-header .navigation nav{min-height: 800px;}
         .bottom-header .navigation li{padding: 25px 0px;}
         .bottom-header .navigation li a{padding: 13px;font-size: 45px;}
+    }
+}
+@media screen and (max-width: 360px){
+    header{
+        .top-header .mbox{height: 88px;padding: 0 0px 0 7px;}
+        .top-header .logo svg{width: 172px;height: 70px;}
+        .bottom-header .navigation button{max-width: 49px;}
     }
 }
 @media screen and (max-width: 320px){
