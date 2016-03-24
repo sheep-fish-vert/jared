@@ -1,6 +1,24 @@
 try{
 
-    $(document).ready(function(){
+    $(document).ready(function() {
+        $(document).on('click touchstart', function(event) {
+            if (!$('.superform').is(event.target) && (!$('.buton').is(event.target)) && ($('.superform').has(event.target).length === 0) && ($('.buton').hasClass('loading'))) {
+                console.log('slowshow');
+                $('.box-to-box').find('.superform').removeClass("slowshow");
+                setTimeout(function() {
+                    $('.buton').removeClass('loading');
+                }, 300);
+            };
+        });
+
+        $('.buton').click(function(event) {
+            event.preventDefault();
+            $(this).addClass('loading');
+            setTimeout(function() {
+                $('.box-to-box').find('.superform').addClass("slowshow");
+            }, 300);
+
+        });
 
     });
 
