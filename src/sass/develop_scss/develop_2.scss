@@ -77,3 +77,15 @@
     50% {right: -24px;}
     100%   {right: -16px;}
 }
+
+.bot-foot-wrap{ background-color: #bd1f12; color: white;
+    .convert{display: flex; align-items: center; justify-content: space-between; height: 62px; 
+        .copyr{ display: block; width: 50%; font-size: 12px; font-family: "Raleway", sans-serif;}
+        .socials{text-align: right; display: block; width: 50%;
+            a{color: white; text-decoration: none;  border-radius: 50%; transition: all 0.5s; display: inline-block;
+                &:hover{background-color: #1f2b62;}
+            }
+            i{font-size: 22px;padding: 10px;}
+        }
+    }
+}
