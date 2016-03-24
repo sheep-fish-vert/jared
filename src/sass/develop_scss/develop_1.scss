@@ -3,7 +3,7 @@
     .prety-icons{border-bottom: 1px solid #1f2b62;padding: 50px 0 50px 0;
         .prety-icons-wrap{display: flex;justify-content:space-around;align-items:center;
             .prety-icon-item{display: flex;align-items:center;text-transform: uppercase;
-                .img{margin-right: 30px;margin-top: -20px;}
+                .img{margin-right: 30px;margin-top: -43px;}
                 .text-top{font-weight: 600;font-size: 24px;line-height:28px;color:#1f2b62;margin-bottom: 15px;}
                 .text-bottom{font-weight: 500;font-size: 14px;color:#bd1f12;}
             }
@@ -28,11 +28,11 @@
             }
         }
         .slick-arrow{top:auto;bottom:30px;
-            &.slick-prev{z-index: 2;right:158px;left:auto;
+            &.slick-prev{z-index: 2;right:22.8%;left:auto;
                 &:before{transform:rotate(-45deg) translateZ(0px);}
                 &:after{transform:rotate(45deg) translateZ(0px);}
             }
-            &.slick-next{z-index: 1;right:115px;left:auto;
+            &.slick-next{z-index: 1;right:19.3%;left:auto;
                 &:before{transform:rotate(45deg) translateZ(0px);}
                 &:after{transform:rotate(-45deg) translateZ(0px);}
             }
@@ -64,9 +64,9 @@
         .comment-slider-main{margin-bottom: 0;
             .comment-slider-item{padding: 0 15px;
                 .comment-slider-title{font-weight: 700;font-size: 30px;color:#1f2b62;text-transform: uppercase;margin-bottom: 10px;}
-                .comment-slider-text{font-size: 14px;color:#7a7a7a;line-height: 20px;margin-bottom: 20px;}
+                .comment-slider-text{font-size: 14px;color:#7a7a7a;line-height: 20px;margin-bottom: 33px;}
                 .comment-slider-autor{display: flex;align-items:center;
-                    .autor-avatar{width: 57px;height: 57px;border-radius: 50%;overflow:hidden;margin-right: 5px;}
+                    .autor-avatar{width: 57px;height: 57px;border-radius: 50%;overflow:hidden;margin-right: 10px;}
                     .autor-name{
                         a{font-size: 12px;text-transform: uppercase;color:#bd1f12;font-weight: 500;text-decoration: none;line-height: 16px;transition:color 300ms ease;
                             &:hover{color:#1f2b62;}

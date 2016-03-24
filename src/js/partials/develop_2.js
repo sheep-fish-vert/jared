@@ -2,8 +2,8 @@ try{
 
     $(document).ready(function() {
         $(document).on('click touchstart', function(event) {
-            if (!$('.superform').is(event.target) && (!$('.buton').is(event.target)) && ($('.superform').has(event.target).length === 0) && ($('.buton').hasClass('loading'))) {
-                console.log('slowshow');
+            if ( !$('.superform').is(event.target) && (!$('.buton').is(event.target)) && ($('.superform').has(event.target).length === 0) && ($('.buton').hasClass('loading')) || $('.superform .del').is(event.target) ) {
+
                 $('.box-to-box').find('.superform').removeClass("slowshow");
                 setTimeout(function() {
                     $('.buton').removeClass('loading');
