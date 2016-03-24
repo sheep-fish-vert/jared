@@ -135,9 +135,8 @@ function validationCallDocument(form) {
         success: function(response) {
             thisForm.trigger("reset");
             $('.box-to-box').find('.suck-massege').addClass('show-suck-massege');
-
-            setTimeout(function() {
-                console.log('virubilo');
+             setTimeout(function() {
+                $('.buton').removeClass('loading'); 
                 $('.box-to-box').find('.suck-massege').removeClass('show-suck-massege');
             }, 2000);
         }

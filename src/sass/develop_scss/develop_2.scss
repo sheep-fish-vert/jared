@@ -5,7 +5,8 @@
             .description{
                 p{font-family: "Raleway", sans-serif; font-weight: 400; font-size: 14px; line-height: 18px; padding-bottom: 25px;}
                 b{ font-family: "Raleway", sans-serif; text-transform: uppercase; font-weight: 600; font-size: 14px; line-height: 18px; display: block; padding: 9px 0;
-                    span, a{text-transform: none; padding-left: 10px; font-weight: 400; color: white; text-decoration: none; }
+                    span, a{text-transform: none; padding-left: 10px; font-weight: 400; color: white; text-decoration: none; transition: all 0.3s; }
+                    a:hover{text-decoration: underline; }
                 }
                 strong{font-family: "Raleway", sans-serif; font-weight: 400; font-size: 14px; line-height: 18px; max-width: 380px; display: block;}
             }
