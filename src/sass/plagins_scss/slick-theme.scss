@@ -88,7 +88,7 @@ $slick-opacity-not-active: 0.25 !default;
     }
     &:before{top:calc(50% - 9px);}
     &:after{top:calc(50% + 8px);}
-    &:hover, &:focus {
+    &:hover {
         outline: none;
         background-color: #1f2b62;
         &:before, &:after{
