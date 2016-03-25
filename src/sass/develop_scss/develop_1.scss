@@ -28,11 +28,11 @@
             }
         }
         .slick-arrow{top:auto;bottom:30px;
-            &.slick-prev{z-index: 2;right:22.8%;left:auto;
+            &.slick-prev{z-index: 2;right:calc(((100% - 1200px)/2) + 55px);left:auto;
                 &:before{transform:rotate(-45deg) translateZ(0px);}
                 &:after{transform:rotate(45deg) translateZ(0px);}
             }
-            &.slick-next{z-index: 1;right:19.3%;left:auto;
+            &.slick-next{z-index: 1;right:calc(((100% - 1200px)/2) + 15px);left:auto;
                 &:before{transform:rotate(45deg) translateZ(0px);}
                 &:after{transform:rotate(-45deg) translateZ(0px);}
             }
