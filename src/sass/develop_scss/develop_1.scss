@@ -28,7 +28,7 @@
             }
         }
         .slick-arrow{top:auto;bottom:30px;
-            &.slick-prev{z-index: 2;right:calc(((100% - 1200px)/2) + 55px);left:auto;
+            &.slick-prev{z-index: 2;right:calc(((100% - 1200px)/2) + 80px);left:auto;
                 &:before{transform:rotate(-45deg) translateZ(0px);}
                 &:after{transform:rotate(45deg) translateZ(0px);}
             }
