@@ -107,7 +107,7 @@ function goTo(){
     $('.navigation nav a').click(function(e){
         e.preventDefault();
         var href = $(this).attr('href');
-        var target = $(href).offset().top-39;
+        var target = $(href).offset().top-136;
         $(scroller).animate({scrollTop:target},500);
     });
 }

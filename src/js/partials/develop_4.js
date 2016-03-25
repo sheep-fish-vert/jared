@@ -8,10 +8,10 @@ try{
                     header = $('header').height();
                 if (scroll > 0){
                     sticky.addClass('active');
-                    $('.global-wrapper').css('padding-top', header+'px');
+                    //$('.global-wrapper').css('padding-top', header+'px');
                 }else {
                     sticky.removeClass('active');
-                    $('.global-wrapper').removeAttr('style');
+                    //$('.global-wrapper').removeAttr('style');
                 }
             }
 
@@ -32,6 +32,7 @@ try{
 
     function changeLeng(){
         if(  $(window).width()<=768  ){
+            //$('.language li:not(.active)').hide();
             $('.language li').on('click', function(event) {
                 if( $('.language').hasClass('slidedawn') ){
                     console.log('has');
@@ -53,7 +54,7 @@ try{
     }
     $(document).ready(function(){
         changeLeng();
-        headerFixed();
+        //headerFixed();
     });
 
     $(window).load(function(){
