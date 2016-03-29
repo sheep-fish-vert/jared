@@ -29,12 +29,12 @@
         }
         .slick-arrow{top:auto;bottom:30px;
             &.slick-prev{z-index: 2;right:calc(((100% - 1200px)/2) + 95px);left:auto;
-                &:before{transform:rotate(-45deg) translateZ(0px);}
-                &:after{transform:rotate(45deg) translateZ(0px);}
+                &:before{transform:rotate(-45deg) translateZ(0px);left: calc(50% - 14px);}
+                &:after{transform:rotate(45deg) translateZ(0px);left: calc(50% - 14px);}
             }
             &.slick-next{z-index: 1;right:calc(((100% - 1200px)/2) + 30px);left:auto;
-                &:before{transform:rotate(45deg) translateZ(0px);}
-                &:after{transform:rotate(-45deg) translateZ(0px);}
+                &:before{transform:rotate(45deg) translateZ(0px);left: calc(50% - 8px);}
+                &:after{transform:rotate(-45deg) translateZ(0px);left: calc(50% - 8px);}
             }
             &:hover{background-color: #1f2b62;
                 &:before, &:after{background-color: #fff;}

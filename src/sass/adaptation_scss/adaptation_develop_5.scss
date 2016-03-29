@@ -8,8 +8,8 @@
                 .txt{font:400 18px/24px 'Raleway'; padding: 3px 0 0 15px; width: calc(100% - 191px);
                     .txt-wrap{height: 400px; overflow: hidden; padding-left: 3px;}
                     h2{ font:900 48px/48px 'Raleway';  text-align: center;   padding-bottom: 36px; }
-                    .button{display: block; padding-top: 46px;
-                    }
+                    .button{display: block; padding-top: 46px;}
+                    .txt-wrap{max-width: 100%;}
                 }
             }
         }
