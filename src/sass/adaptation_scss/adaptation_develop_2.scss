@@ -19,7 +19,7 @@
 @media screen and (max-width: 767px){
     .top-foot-wrap {
         .mbox{padding: 0;}
-        .conteiner-foot {display: block; height: auto; padding-top: 0;padding-left: 0;
+        .conteiner-foot {display: block; height: auto; padding-top: 0;padding-left: 0;    padding-bottom: 0px;
             .box-to-box{padding: 0 45px; width: 100%; padding-top: 50px; padding-bottom: 45px;
                 .description{
                     p{ font-size: 18px; line-height: 22px;}
@@ -37,26 +37,45 @@
     }
 
     .superform{top: -150px; left: 145px; bottom: auto;}
-    .slowshow { top: -300px; left: 145px; bottom: auto;}
+    .slowshow { top: 0px; left: 0px; bottom: 0; right: 0;position: fixed; display: flex; align-items: center; justify-content: center; z-index: 151;background-color: rgba(31, 43, 98, 0.98); border-radius: 0;  height: 100%;overflow-y: scroll;
+        .convert{}
+        .convert .contact-form-title {color: white; }
+        .convert .contact-form-item .form_input label.krasotka { background-color: white;color:rgba(31, 43, 98, 1);
+            &.active-plus{ width: 34px; height: 34px; position: relative;
+                &:before{content: ''; position: absolute; width: 2px; top: 7px; bottom: 7px; right: calc(34px/2 - 1px); background-color:rgba(31, 43, 98, 1); }
+                &:after{content: ''; position: absolute; height: 2px; left: 7px; right: 7px; top: calc(34px/2 - 1px); background-color:rgba(31, 43, 98, 1); }
+                span{display: none;}
+            }
+            &:hover{background-color: white;}
+        }
+        
+    }
     .top-foot-wrap .conteiner-foot .box-to-box .buton:before {top: 0px; left: 70px; right: auto;}
     .top-foot-wrap .conteiner-foot .box-to-box .loading:before {top: -32px; left: 70px; right: auto;}
-    .show-suck-massege {left: 10%; right: 10%; bottom: auto; top: 70px; text-align: center;}
-
+    .show-suck-massege {left: 10%; right: 10%; bottom: auto; top: 70px; text-align: center;  }
+    .superform .convert .contact-form-item .form_input input[type=text], .superform .convert .contact-form-item .form_input input[type=email], .superform .convert .contact-form-item .form_input textarea { background-color: transparent; border: 1px solid white; color: white; }
+    
+    .superform .convert .error .form_input input[type=text], .superform .convert .error .form_input input[type=email], .superform .convert .error .form_input textarea {box-shadow: none; border: 1px solid red;}
+    .superform .convert .del:before, .superform .convert .del:after  {background-color: white; }
 }
 
 @media screen and (max-width: 666px){
 
 }
 @media screen and (max-width: 479px){
-    .superform{ top: -20%; left: 0; bottom: auto;}
-    .slowshow { top: -35%;left: 50%;transform: translateX(-50%); bottom: auto;}
+   // .superform{ top: -20%; left: 0; bottom: auto;}
+   // .slowshow { top: -35%;left: 50%;transform: translateX(-50%); bottom: auto;}
 }
 
 @media screen and (max-width: 400px){
-    .superform{ top: -10%; left: 0; bottom: auto;}
-    .slowshow { top: -21%;left: 50%;transform: translateX(-50%); bottom: auto;}
+    //.superform{ top: -10%; left: 0; bottom: auto;}
+   // .slowshow { top: -21%;left: 50%;transform: translateX(-50%); bottom: auto;}
 }
 
 @media screen and (max-width: 320px){
 
+}
+
+@media screen and (max-height: 520px){
+    .slowshow .convert {height: 100%;}
 }

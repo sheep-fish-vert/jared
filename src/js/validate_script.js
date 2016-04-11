@@ -146,13 +146,12 @@ function validationCallDocument(form) {
 /* Отправка формы с файлaми */
 function validationCallDocuments(form){
 
+    $('.box-to-box').find('.superform').removeClass('slowshow');      
     var thisForm = $(form);
     var formData = new FormData($(form)[0]);
 
-    $.each(thisForm.find('input[type="file"]')[0].files, function(index, file){
-        formData.append('file-'+index, file);
-    });
-
+    formData.append( 'file', element) ;
+   
     $.ajax({
         url: thisForm.attr('action'),
         type: "POST",
@@ -161,8 +160,13 @@ function validationCallDocuments(form){
         processData:false,
         cache:false,
         success: function(response) {
+            $('.box-to-box').find('.suck-massege').addClass('show-suck-massege');
+             setTimeout(function() {
+                $('.buton').removeClass('loading'); 
+                $('.box-to-box').find('.suck-massege').removeClass('show-suck-massege');
+            }, 2000);
             thisForm.trigger("reset");
-            popNext("#call_success", "call-popup");
+            //popNext("#call_success", "call-popup");
         }
     });
 
@@ -215,7 +219,7 @@ function fancyboxForm(){
 
 $(document).ready(function(){
     //validate('#call-popup .contact-form', { submitFunction: validationCall });
-    validate('.contact-form-popup', { submitFunction: validationCallDocument});
+    validate('.contact-form-popup', { submitFunction: validationCallDocuments});
     
    Maskedinput();
    fancyboxForm();

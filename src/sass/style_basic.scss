@@ -28,12 +28,12 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 
 /* wraps styling*/
 
-.mbox{max-width:1200px;width:100%;padding:0 15px;margin:0 auto;position:relative;z-index:1;}
+.mbox{max-width:1200px;width:100%;padding:0 30px;margin:0 auto;position:relative;z-index:1;}
 .mbox:after{content:"";clear:both;font-size:1px;line-height:1px;height:0;overflow:hidden;display:block;}
 
 @media screen and (max-width: 640px){
 
-    .mbox{padding: 0 27px 0 42px;}
+    .mbox{padding: 0 30px 0 30px;}
 
 }
 

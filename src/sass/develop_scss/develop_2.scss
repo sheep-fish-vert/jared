@@ -26,10 +26,10 @@
     }
 }
 
-.superform{position: absolute;left:98px;bottom: -70px;background-color: white; border-radius: 30px; box-shadow: 0px 1px 20px 0px rgba(189, 31, 18, 0.14), 0px 3px 38px 0px rgba(31, 43, 98, 0.14); border-radius: 30px 30px 170px 30px; transform: scale(0.02);opacity: 0;transition: left ease 0.5s,bottom ease .5s,transform ease 0.5s,opacity ease 0.4s;
+.superform{position: absolute;left:98px;bottom: -70px;background-color: white; border-radius: 30px; box-shadow: 0px 1px 20px 0px rgba(189, 31, 18, 0.14), 0px 3px 38px 0px rgba(31, 43, 98, 0.14); border-radius: 20px 20px 20px 20px; transform: scale(0.02);opacity: 0;transition: left ease 0.5s,bottom ease .5s,transform ease 0.5s,opacity ease 0.4s;
 
     .convert{ position: relative; padding:40px 30px 30px;
-        .del{position: absolute;width: 20px;height: 20px;top: 13px;right: 34px;cursor: pointer;
+        .del{position: absolute;width: 20px;height: 20px;top: 13px;right: 13px;cursor: pointer;
             &:after,&:before{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%) rotate(45deg);width: 100%;height: 2px;background-color: #1f2b62;content: '';}
             &:before{transform: translate(-50%, -50%) rotate(-45deg);}
         }
@@ -41,7 +41,7 @@
                 }
                 textarea{height: 87px; resize: none; padding: 10px 20px; }
                 input[type=file]{width: 0; height: 0; overflow: hidden; opacity: 0;}
-                label.krasotka{height: 34px; background-color: #bebebe; width: 133px; text-align: center; border-radius: 17px; display: block; line-height: 34px; color: white; cursor: pointer; transition: all 0.3s;font-size: 12px;font-family: "Raleway", sans-serif; position: relative;
+                label.krasotka{height: 34px; background-color: #bebebe; width: 133px; text-align: center; border-radius: 17px; display: block; line-height: 34px; color: white; cursor: pointer; transition: all 0.3s;font-size: 12px;font-family: "Raleway", sans-serif; position: relative; display: inline-block; vertical-align: top; 
                     &:hover{background-color: #909090; }
                 }
                 ::-webkit-input-placeholder {color: rgb(190, 190, 190);}
@@ -61,6 +61,11 @@
                     &:after{content: ''; position: absolute; right: -16px; top: 16px; width: 8px; height: 2px; background-color:#E72212; animation: arrowMove1 1s ease-out infinite; }
                     &:before{content: ''; position: absolute; right: -14px; top: 13px; width: 8px; height: 8px; border-top: 2px solid #E72212; border-left: 2px solid #E72212; transform: rotate(-45deg); animation: arrowMove2 1s ease-out infinite;}
                 }
+            }
+        }
+        .conteiner-list{ padding-left: 10px; display: inline-block; font-size: 12px; font-family: "Raleway";color: rgb(190, 190, 190); max-width: 200px; overflow-y: scroll; max-height: 55px;
+            ul li{ padding: 3px 0 3px 10px;
+                span{cursor: pointer;}
             }
         }
     }
