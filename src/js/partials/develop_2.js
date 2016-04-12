@@ -4,7 +4,12 @@ try {
         var image = 437;
 
         if (text >= image) {
-            $('.about .txt-wrap').height(image - 85);
+            if ($(window).width() < 666) {
+                $('.about .txt-wrap').height(image - 110);
+            } else {
+                $('.about .txt-wrap').height(image - 124);
+            }
+            
             $('.about .txt .button').css('display', 'block');
         } 
     }
@@ -50,7 +55,6 @@ try {
 
             if ($(window).width() < 767){
                 $('body').addClass('overflover2');
-                console.log('zshlo');
             }
 
             event.preventDefault();
