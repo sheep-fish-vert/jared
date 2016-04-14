@@ -15,7 +15,7 @@
                     <div class="superform">
                         <div class="convert">
                             <div class="del"></div>
-                            <form action="ajax.php" name="strange-popup" class="contact-form-popup">
+                            <form action="ajax.php" name="strange-popup" enctype="multipart/form-data"  class="contact-form-popup">
                                 <div class="contact-form-title">
                                     <h5>Start now!</h5>
                                 </div>
@@ -44,7 +44,6 @@
                                     <div class="contact-form-item">
                                         <div class="contact-form-item-input form_row">
                                             <div class="form_input">
-                                                <input name="userfile[]" type="file" multiple="" id="add_doc" required="required">
                                                 <label for="add_doc" class='krasotka'>
                                                     <span>+ Add document</span>
                                                 </label>
@@ -65,6 +64,7 @@
                                     </div>
                                 </div>
                             </form>
+                            <input type="file" multiple="" id="add_doc" required="required">
                         </div>
                     </div>
                     <div class="suck-massege">

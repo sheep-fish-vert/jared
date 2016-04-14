@@ -30,9 +30,7 @@
     $mail->CharSet = "UTF-8";                   // кодировка
     $mail->Body = $mess;
     if(isset($_FILES['file'])) {
-            if($_FILES['file']['error'] == 0){
-            $mail->AddAttachment($_FILES['file']['tmp_name'], $_FILES['file']['name']);
-        }
+            $mail->AddAttachment($_FILES['file']);
     }
     // отправляем наше письмо
     if (!$mail->Send()){

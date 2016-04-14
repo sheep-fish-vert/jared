@@ -26,14 +26,14 @@ try {
                 }, 300);
 
                 if ($(window).width() < 767){
-                    console.log('asdfasdfasdfasdf');
+                    //console.log('asdfasdfasdfasdf');
                     $('body').removeClass('overflover2');
                 }
             };
 
             if ($('.conteiner-list>ul>li>span').is(event.target) ) {
                 event.preventDefault();
-                console.log($(event.target).closest('li').attr('data-file-cell'));
+                //console.log($(event.target).closest('li').attr('data-file-cell'));
                 var i = $(event.target).closest('li').attr('data-file-cell');
                 $(event.target).closest('li').remove();
                 delete element[i];
@@ -81,7 +81,7 @@ try {
                 coutering++;
             };
 
-            console.log(element);
+            //console.log(element);
 
             for (var j = 0; j < element.length; j++) {
                 if (!!element[j]){

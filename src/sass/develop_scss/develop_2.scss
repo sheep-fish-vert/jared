@@ -26,6 +26,7 @@
     }
 }
 
+#add_doc{width: 0; height: 0; overflow: hidden; opacity: 0;}
 .superform{position: absolute;left:98px;bottom: -70px;background-color: white; border-radius: 30px; box-shadow: 0px 1px 20px 0px rgba(189, 31, 18, 0.14), 0px 3px 38px 0px rgba(31, 43, 98, 0.14); border-radius: 20px 20px 20px 20px; transform: scale(0.02);opacity: 0;transition: left ease 0.5s,bottom ease .5s,transform ease 0.5s,opacity ease 0.4s;
 
     .convert{ position: relative; padding:40px 30px 30px;
@@ -40,7 +41,7 @@
                     &:focus{border-color: #C7B9B9; }
                 }
                 textarea{height: 87px; resize: none; padding: 10px 20px; }
-                input[type=file]{width: 0; height: 0; overflow: hidden; opacity: 0;}
+                
                 label.krasotka{height: 34px; background-color: #bebebe; width: 133px; text-align: center; border-radius: 17px; display: block; line-height: 34px; color: white; cursor: pointer; transition: all 0.3s;font-size: 12px;font-family: "Raleway", sans-serif; position: relative; display: inline-block; vertical-align: top; 
                     &:hover{background-color: #909090; }
                 }
@@ -63,7 +64,7 @@
                 }
             }
         }
-        .conteiner-list{ padding-left: 10px; display: inline-block; font-size: 12px; font-family: "Raleway";color: rgb(190, 190, 190); max-width: 200px; overflow-y: scroll; max-height: 55px;
+        .conteiner-list{ padding-left: 10px; display: inline-block; font-size: 12px; font-family: "Raleway";color: rgb(190, 190, 190); min-width: 200px; width: calc(100% - 150px); overflow-y: scroll; max-height: 55px;
             ul li{ padding: 3px 0 3px 10px;
                 span{cursor: pointer;}
             }

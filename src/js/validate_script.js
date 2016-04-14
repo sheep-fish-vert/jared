@@ -149,9 +149,16 @@ function validationCallDocuments(form){
     $('.box-to-box').find('.superform').removeClass('slowshow');      
     var thisForm = $(form);
     var formData = new FormData($(form)[0]);
+/*
+    for (var j = 0; j < element.files.length; j++) {
+        formData.append('file', element[j]);
+        console.log(element[j]);
+    }
+*/
+    $.each(element, function(index, file){
+        formData.append('file['+index+']', file);
+    });
 
-    formData.append( 'file', element) ;
-   
     $.ajax({
         url: thisForm.attr('action'),
         type: "POST",
@@ -165,7 +172,8 @@ function validationCallDocuments(form){
                 $('.buton').removeClass('loading'); 
                 $('.box-to-box').find('.suck-massege').removeClass('show-suck-massege');
             }, 2000);
-            thisForm.trigger("reset");
+             thisForm.trigger("reset");
+             $('.conteiner-list>ul').html('');
             //popNext("#call_success", "call-popup");
         }
     });

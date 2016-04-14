@@ -34,11 +34,11 @@
             .navigation{width: 50%;
                 ul{max-width: 100%;flex-direction:column;width: 100%; height: calc(100vh - 120px); display: flex; justify-content: space-around; align-items: center; }
                 li{ width: auto;
-                    a{font-size: 60px;font-weight: 700;display: inline-block;width: auto;padding: 13px;
+                    a{font-size: 24px;font-weight: 700;display: inline-block;width: auto;padding: 13px;
                         &:hover{background-color: inherit;opacity: .9;}
                     }
                 }
-                nav{position: absolute;width: 100%;left: 0;top: 0px; bottom: 0; right: 0; z-index: 15;min-height: 100vh;background-color: rgba(189,31,18, .95);display: flex;align-items:center;justify-content: space-around;bottom: 100%;left: 100%;transition:top ease-out .5s,left ease-out .2s;
+                nav{position: absolute;width: 100%;left: 0;top: 0px; bottom: 0; right: 0; z-index: 15;min-height: 100vh;background-color: rgba(189,31,18, .95);display: flex;align-items:center;justify-content: space-around;bottom: 100%;left: 100%;transition:top ease-out .5s,left ease-out .2s; overflow: hidden;
                     &.active{bottom: 0;left: 0; position: fixed; top: 0; right: 0;}
                 }
                 button{display: block;position: absolute;top: 50%;right: 4.6%;transform: translateY(-50%);width: 100%;height: 32%;border:none;outline: none;background:transparent;max-width: 60px;z-index: 150;
@@ -93,7 +93,7 @@
         .bottom-header .language a{padding: 35px 0px;}
         .bottom-header .navigation button{max-width: 55px;}
         .bottom-header .navigation li{padding: 25px 0px;}
-        .bottom-header .navigation li a{padding: 13px;font-size: 45px;}
+        .bottom-header .navigation li a{padding: 13px;font-size: 18px;}
         .bottom-header .navigation nav.active { padding-top: 0px;}
     }
 }
@@ -114,11 +114,13 @@
         .bottom-header .navigation li a{padding: 11px;font-size: 40px;}
     }
 }
-
+@media screen and (max-width: 450px){
+    header .top-header .logo svg { width: 160px;}
+}
 @media screen and (max-height: 600px){
-    header .bottom-header .navigation li a {font-size: 28px;}
+   .mobile header .bottom-header .navigation li a {font-size: 28px;}
 }
 
 @media screen and (max-height: 600px){
-    header .bottom-header .navigation li a {font-size: 28px;}
+   .mobile header .bottom-header .navigation li a {font-size: 28px;}
 }
