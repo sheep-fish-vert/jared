@@ -159,7 +159,7 @@ function headeButer(menuMobile,toggleMenu){
 
 /* DOCUMENT READY  */
 $(document).ready(function() {
-    headeButer($('.navigation button'), $('.navigation nav'));
+    headeButer($('.navigation'), $('.navigation nav'));
 
     oneHeightItems();
     $('.footer_placeholder').height($('.footer').outerHeight());

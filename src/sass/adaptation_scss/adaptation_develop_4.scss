@@ -46,12 +46,13 @@
                     span{top: calc(50% - 1px);left: 50%;transform: translateX(-50%);}
                     &:before{top:auto;bottom: 0;}
 
-                    &.active{
+                    
+                }
+                &.active button{
                         &:after,&:before{transform: rotate(45deg);top: 13px;}
                         &:before{transform: rotate(-45deg)}
                         span{width: 0%;}
                     }
-                }
             }
             .language{width: 50%;display: flex;align-items:stretch;justify-content:flex-start;
                 &:after{display: none;}

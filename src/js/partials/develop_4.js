@@ -3,17 +3,21 @@ try{
 
         function headeFIX() {
             var ddd = $.scrollbarWidth();
-            if($(window).width()>768 - ddd ){
+            if ($(window).width() > 768 - ddd) {
+                var fixWP = 0;
+                if (!!$('#wpadminbar').length ) { 
+                    fixWP = $('#wpadminbar').height();
+                }
                 var sticky = $('.bottom-header-wrap'),
                     scroll = $(window).scrollTop(),
                     header = $('.top-header').height();
                 if (scroll > 97){
                     sticky.addClass('active');
-                    sticky.css('top', '0');  
+                    sticky.css('top', fixWP+'px');  
                    // $('.global-wrapper').css('padding-top', header+'px');
                 }else {
                     sticky.removeClass('active');
-                    sticky.css('top', 97 - scroll +'px' );
+                    sticky.css('top', 97 + fixWP - scroll +'px' );
                     //$('.global-wrapper').removeAttr('style');
                 }
             }
