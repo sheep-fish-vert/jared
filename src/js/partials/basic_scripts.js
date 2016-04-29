@@ -105,14 +105,25 @@ function animationBlock(item){
 /*GO TO href*/
 function goTo(){
     $('.navigation nav a').click(function(e) {
-        $('.navigation nav').removeClass('active');
-        $('.navigation button').removeClass('active');
-        $('body').removeClass('overflover');
-
+        console.log($.scrollbarWidth());
         e.preventDefault();
-        var href = $(this).attr('href');
-        var target = $(href).offset().top-136;
+        var butt = $(this);
+        setTimeout(function(){
+            $('.navigation nav').removeClass('active');
+            $('.navigation button').removeClass('active');
+            $('body').removeClass('overflover');
+            
+            var sdvig;
+          if($(window).width() < (767 - $.scrollbarWidth()) ){
+             sdvig = 0; 
+          } else{
+              sdvig = 46; 
+          }
+            var href = butt.attr('href');
+            var target = $(href).offset().top-sdvig;
         $(scroller).animate({scrollTop:target},500);
+        }, 300)
+        
     });
 }
 
